@@ -1,0 +1,129 @@
+body {
+    background: #111111;
+    padding: 2%;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: auto;
+}
+
+.header {
+    background: #202020;
+    border: solid 3px #202020;
+    border-radius: 7px;
+    max-width: 100%;
+    line-height: 50px;
+}
+
+.content {
+    background: grey;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+form > div, div.content > div {
+    padding: 20px 0 20px 5%;
+    background: black;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+}
+
+input.ip, textarea, section {
+    padding: 8px 1px;
+    width: 90%;
+    border: 0px;
+    border-bottom: solid 2px darkgrey;
+    font-size: 15px;
+    color: white;
+    background: black;
+}
+
+section {
+    padding: 8px 8px;
+    border: 2px darkgrey;
+    border-style: none none solid solid;
+    border-bottom-left-radius: 5px;
+}
+
+#submit, #reset {
+    width: 90px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 20px 0 0;
+    color: white;
+    font-size: 15px;
+}
+
+#submit {
+    background: green;
+}
+
+#reset {
+    background: dimgrey;
+}
+
+aside {
+    float: right;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+    height: 250px;
+    max-width: 200px;
+}
+
+body > div.theme_toggle {
+    float: right;
+}
+
+input.light_mode{
+    display: none;
+}
+
+input.dark_mode{
+    width: 100px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background: dimgrey;
+    color: white;
+}
+
+#dispimage {
+    max-height: 200px;
+    max-width: 180px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+div.name{
+    max-width: calc(100% - 235px);
+}
+
+@keyframes focus {
+    from {
+        border-bottom: 2px darkgrey solid;
+    }
+    to {
+        border-bottom: 2px green solid;
+    }
+}
+
+input.ip:focus, textarea:focus, select:focus {
+    outline: none;
+    animation-name: focus;
+    animation-duration: 300ms;
+    border-bottom: 2px green solid;
+}
+
+input.dark_mode:focus, input.light_mode:focus{
+    outline:none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
